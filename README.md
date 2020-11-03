@@ -11,7 +11,7 @@
  
  1. Open the project directory.
  2. Now open the Power Shell on that directory.
- 3. Type the following commands:
+ 3. Type the following command:
  ```bash
  mvn clean test -Dsurefire
 ```
