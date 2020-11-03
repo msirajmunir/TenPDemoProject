@@ -1,0 +1,4 @@
+TestCases\SmokeTestCases.class
+ConnectionClass\ConnectionString.class
+Pages\HomePage.class
+Pages\Chapter1Page.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DefaultSuite">
+    <test verbose="2" preserve-order="true" name="D:/DemoProject/src/test/java/TestCases/SmokeTestCases.java">
+        <classes>
+            <class name="TestCases.SmokeTestCases">
+                <methods>
+                    <include name="openTheWebsite"/>
+                    <include name="TestCase01"/>
+                    <include name="TestCase2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
