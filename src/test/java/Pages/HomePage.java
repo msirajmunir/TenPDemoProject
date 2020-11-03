@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Selenide.$;
  * @dated 02-11-2020
  */
 public class HomePage {
-  //  WebDriver driver;
 
     public String chapter1Locator = "//li/a[text()='Chapter1']";
     public String chapter2Locator = "//li/a[text()='Chapter2']";
@@ -22,13 +21,8 @@ public class HomePage {
     public WebElement chapter1;
     public WebElement chapter2;
 
-    /*public HomePage(WebDriver driver){
-        this.driver = driver;
-    }
-*/
     public void clickOnChapter1(){
         chapter1 = $(By.xpath(chapter1Locator)); //Selenide Syntax
-                //driver.findElement(chapter1Locator); //selenium Syntax
         chapter1.click();
         System.out.println("Clicking on Chp1");
     }

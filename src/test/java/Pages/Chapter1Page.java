@@ -13,17 +13,16 @@ import org.openqa.selenium.WebElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class Chapter1Page {
-    //WebDriver driver;
 
     public String testingText1 = "divontheleft";
     public String homePageLink = "//p/a[text()='Home Page']";
 
-    public WebElement text1;
+    public WebElement assertionSampleText;
     public WebElement homePage;
 
     public String assertSampleText1(){
-        text1 = $(By.id(testingText1));
-        return text1.getText();
+        assertionSampleText = $(By.id(testingText1));
+        return assertionSampleText.getText();
     }
 
     public void clickOnHomePageLink(){

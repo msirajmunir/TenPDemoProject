@@ -23,26 +23,34 @@ public class SmokeTestCases extends ConnectionString {
 
     @Test(priority = 0)
     public void openTheWebsite(){
-       // driver.get("http://book.theautomatedtester.co.uk/"); //Selenium way of opening the URL
+
         open("http://book.theautomatedtester.co.uk/"); //Selenide Way of opening the URL
         System.out.println("Home Page Title: " + driver.getTitle());
     }
 
     @Test (priority = 1)
-    public void TestCase01() {
+    public void clickOnChapterOne() {
+        System.out.println("===================Test Case 01======================");
+        System.out.println(" ");
         homePageObj = new HomePage();
         homePageObj.clickOnChapter1(); //Calling function from HomePage class.
         System.out.println("Chapter1 Page Title: " + driver.getTitle());
-       // Thread.sleep(2000);
+        System.out.println(" ");
+        System.out.println("===================Test Case 01 Ended======================");
 
     }
 
     @Test(priority = 2)
-    public void TestCase2(){
+    public void assertAndNavigateBackToHomePage(){
+        System.out.println("===================Test Case 02======================");
+        System.out.println(" ");
         chapter1PageObj = new Chapter1Page();
         Assert.assertEquals(chapter1PageObj.assertSampleText1(),"Assert that this text is on the page", "This will verify the text with the expected value. ");
         System.out.println("Actual text: " + chapter1PageObj.assertSampleText1());
         chapter1PageObj.clickOnHomePageLink(); //Calling function from ChapterPage class.
         System.out.println("Home Page Title: " + driver.getTitle());
+        System.out.println(" ");
+        System.out.println("===================Test Case 02 Ended======================");
+
     }
 }

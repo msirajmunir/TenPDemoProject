@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="DefaultSuite" duration-ms="12889" started-at="2020-11-03T11:42:50 PKT" finished-at="2020-11-03T11:43:03 PKT">
+  <suite name="DefaultSuite" duration-ms="16575" started-at="2020-11-03T13:52:29 PKT" finished-at="2020-11-03T13:52:45 PKT">
     <groups>
     </groups>
-    <test name="D:/DemoProject/src/test/java/TestCases/SmokeTestCases.java" duration-ms="12889" started-at="2020-11-03T11:42:50 PKT" finished-at="2020-11-03T11:43:03 PKT">
+    <test name="D:/DemoProject/src/test/java/TestCases/SmokeTestCases.java" duration-ms="16575" started-at="2020-11-03T13:52:29 PKT" finished-at="2020-11-03T13:52:45 PKT">
       <class name="TestCases.SmokeTestCases">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:TestCases.SmokeTestCases@31610302]" name="getWebDriver" is-config="true" duration-ms="8264" started-at="2020-11-03T11:42:50 PKT" finished-at="2020-11-03T11:42:58 PKT">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:TestCases.SmokeTestCases@31610302]" name="getWebDriver" is-config="true" duration-ms="11259" started-at="2020-11-03T13:52:29 PKT" finished-at="2020-11-03T13:52:40 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="openTheWebsite()[pri:0, instance:TestCases.SmokeTestCases@31610302]" name="openTheWebsite" duration-ms="1109" started-at="2020-11-03T11:42:58 PKT" finished-at="2020-11-03T11:42:59 PKT">
+        <test-method status="PASS" signature="openTheWebsite()[pri:0, instance:TestCases.SmokeTestCases@31610302]" name="openTheWebsite" duration-ms="1273" started-at="2020-11-03T13:52:40 PKT" finished-at="2020-11-03T13:52:41 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTheWebsite -->
-        <test-method status="PASS" signature="TestCase01()[pri:1, instance:TestCases.SmokeTestCases@31610302]" name="TestCase01" duration-ms="1411" started-at="2020-11-03T11:42:59 PKT" finished-at="2020-11-03T11:43:01 PKT">
+        <test-method status="PASS" signature="TestCase01()[pri:1, instance:TestCases.SmokeTestCases@31610302]" name="TestCase01" duration-ms="1471" started-at="2020-11-03T13:52:41 PKT" finished-at="2020-11-03T13:52:43 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method status="PASS" signature="TestCase2()[pri:2, instance:TestCases.SmokeTestCases@31610302]" name="TestCase2" duration-ms="897" started-at="2020-11-03T11:43:01 PKT" finished-at="2020-11-03T11:43:02 PKT">
+        <test-method status="PASS" signature="TestCase2()[pri:2, instance:TestCases.SmokeTestCases@31610302]" name="TestCase2" duration-ms="1306" started-at="2020-11-03T13:52:43 PKT" finished-at="2020-11-03T13:52:44 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase2 -->
-        <test-method status="PASS" signature="TearDownTest()[pri:0, instance:TestCases.SmokeTestCases@31610302]" name="TearDownTest" is-config="true" duration-ms="1096" started-at="2020-11-03T11:43:02 PKT" finished-at="2020-11-03T11:43:03 PKT">
+        <test-method status="PASS" signature="TearDownTest()[pri:0, instance:TestCases.SmokeTestCases@31610302]" name="TearDownTest" is-config="true" duration-ms="1109" started-at="2020-11-03T13:52:44 PKT" finished-at="2020-11-03T13:52:45 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownTest -->
