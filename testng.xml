@@ -6,8 +6,8 @@
             <class name="TestCases.SmokeTestCases">
                 <methods>
                     <include name="openTheWebsite"/>
-                    <include name="TestCase01"/>
-                    <include name="TestCase2"/>
+                    <include name="clickOnChapterOne"/>
+                    <include name="assertAndNavigateBackToHomePage"/>
                 </methods>
             </class>
         </classes>
