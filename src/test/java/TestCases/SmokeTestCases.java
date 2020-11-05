@@ -11,6 +11,7 @@ package TestCases;
 import ConnectionClass.ConnectionString;
 import Pages.Chapter1Page;
 import Pages.HomePage;
+import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -37,6 +38,7 @@ public class SmokeTestCases extends ConnectionString {
                 System.out.println(" ");
                 homePageObj = new HomePage();
                 homePageObj.clickOnChapter1(); //Calling function from HomePage class.
+                Configuration.timeout = 3000;
                 System.out.println("Chapter1 Page Title: " + title());
                 System.out.println(" ");
                 System.out.println("===================Test Case 01 Ended======================");
