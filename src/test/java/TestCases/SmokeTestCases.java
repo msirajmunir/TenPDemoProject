@@ -15,6 +15,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.title;
 
 
 public class SmokeTestCases extends ConnectionString {
@@ -26,7 +27,7 @@ public class SmokeTestCases extends ConnectionString {
     public void openTheWebsite(){
 
         open("http://book.theautomatedtester.co.uk/"); //Selenide Way of opening the URL
-        System.out.println("Home Page Title: " + driver.getTitle());
+        System.out.println("Home Page Title: " + title());
     }
 
     @Test (priority = 1)
@@ -36,7 +37,7 @@ public class SmokeTestCases extends ConnectionString {
                 System.out.println(" ");
                 homePageObj = new HomePage();
                 homePageObj.clickOnChapter1(); //Calling function from HomePage class.
-                System.out.println("Chapter1 Page Title: " + driver.getTitle());
+                System.out.println("Chapter1 Page Title: " + title());
                 System.out.println(" ");
                 System.out.println("===================Test Case 01 Ended======================");
             } catch (NoSuchElementException ex){
@@ -54,7 +55,7 @@ public class SmokeTestCases extends ConnectionString {
             chapter1PageObj.assertSampleText1(); //replaced above assertion code with Selenide code.
             System.out.println("Actual text: " + chapter1PageObj.assertSampleText1());
             chapter1PageObj.clickOnHomePageLink(); //Calling function from ChapterPage class.
-            System.out.println("Home Page Title: " + driver.getTitle());
+            System.out.println("Home Page Title: " + title());
             System.out.println(" ");
             System.out.println("===================Test Case 02 Ended======================");
         } catch (NoSuchElementException ex){
