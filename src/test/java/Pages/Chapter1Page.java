@@ -16,6 +16,7 @@ public class Chapter1Page {
 
     public String testingText1 = "divontheleft";
     public String homePageLink = "//p/a[text()='Home Page']";
+    public String textToAssert = "Assert that this text is on the page";
 
     public WebElement assertionSampleText;
     public WebElement homePage;
