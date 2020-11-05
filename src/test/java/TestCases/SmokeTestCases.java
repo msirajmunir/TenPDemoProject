@@ -50,7 +50,8 @@ public class SmokeTestCases extends ConnectionString {
             System.out.println("===================Test Case 02======================");
             System.out.println(" ");
             chapter1PageObj = new Chapter1Page();
-            Assert.assertEquals(chapter1PageObj.assertSampleText1(),chapter1PageObj.textToAssert, "This will verify the text with the expected value. ");
+            //Assert.assertEquals(chapter1PageObj.assertSampleText1(),chapter1PageObj.textToAssert, "This will verify the text with the expected value. ");
+            chapter1PageObj.assertSampleText1(); //replaced above assertion code with Selenide code.
             System.out.println("Actual text: " + chapter1PageObj.assertSampleText1());
             chapter1PageObj.clickOnHomePageLink(); //Calling function from ChapterPage class.
             System.out.println("Home Page Title: " + driver.getTitle());

@@ -10,6 +10,8 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class Chapter1Page {
@@ -22,7 +24,7 @@ public class Chapter1Page {
     public WebElement homePage;
 
     public String assertSampleText1(){
-        assertionSampleText = $(By.id(testingText1));
+        assertionSampleText = $(By.id(testingText1)).shouldHave(text(textToAssert));
         return assertionSampleText.getText();
     }
 
